@@ -12,9 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
         
-        document.addEventListener("DOMContentLoaded", function() {
-            console.log("Streaming page loaded successfully.");
-        });
+
         
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');

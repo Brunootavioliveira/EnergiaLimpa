@@ -1,0 +1,162 @@
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(to left,rgb(50, 79, 37), rgb(255, 255, 255));
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(20, 63, 1);
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex; 
+    align-items: center;
+}
+
+.nav-links li {
+    display:inline; 
+}
+
+.contatos{
+    height: 100vh;
+    background-color: #d8e1e1;
+}
+
+.comente-container {
+    background-color: #e6f8e4;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 50%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    margin: 40px auto;
+    margin-top: 120px;
+}
+
+.comente-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--black-color);
+}
+
+.comente-container textarea, .comente-container input {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background:rgb(127, 156, 112);
+    color: var(--white-color);
+    outline: none;
+}
+
+.mensagem {
+    height: 50px;
+}
+
+.comente-container textarea::placeholder, .comente-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.comente-container button {
+    width: 80%;
+    padding: 15px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background: #1e3c72;
+    color: var(--white-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.comente-container button:hover {
+    background: #162b57;
+}
+
+@media (max-width: 1000px) {
+    .menu-toggle {
+        display: block; 
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column; 
+        position: absolute; 
+        top: 40px; 
+        right: 0; 
+        background-color: var(--black-color);
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 515px) {
+    .comente-container {
+        width: 70%;   
+    } 
+}

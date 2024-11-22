@@ -1,10 +1,7 @@
 :root {
-    --background-color: #000;
-    --primary-color: #1e90ff;
-    --secondary-color: #fff;
-    --text-color: #fff;
-    --header-background: rgba(0, 0, 0, 0.8);
-    --cor0: #22D4FD;
+    --black-color: #000;
+    --white-color: #fff;
+    --destaque-text: #22D4FD;
 }
 
 body {
@@ -12,8 +9,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--black-color);
+    color: var(--white-color);
     display: flex;
     flex-direction: column;
 }
@@ -27,12 +24,12 @@ main {
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 10px solid rgb(255, 255, 255); /* Cor da seta */
-    margin: 20px; /* Margem para espaçamento */
+    border-right: 10px solid rgb(255, 255, 255);
+    margin: 20px;
 }
 
 header {
-    background: linear-gradient(to bottom, var(--background-color) 0%, #111 100%);
+    background: linear-gradient(to bottom, var(--black-color) 0%, #111 100%);
     position: fixed;
     width: 100%;
     padding: 10px 0;
@@ -59,7 +56,7 @@ header ul li {
 }
 
 header ul li a {
-    color: var(--cor0);
+    color: rgb(20, 63, 1);;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -67,13 +64,13 @@ header ul li a {
 
 
 .title-destaque{
-    color: var(--cor0);
+    color: var(--destaque-text);
 }
 
 #live-stream {
     margin-top: 5%;
     padding: 60px 30px;
-    background-color: var(--background-color);
+    background-color: var(--black-color);
 }
 
 .stream-grid {
@@ -94,7 +91,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to bottom, var(--background-color) 0%, #111 100%);
+    background: linear-gradient(to bottom, var(--black-color) 0%, #111 100%);
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
