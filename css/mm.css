@@ -1,130 +1,121 @@
 :root {
-    --black-color: #000;
-    --white-color: #fff;
-    --destaque-text: #22D4FD;
+  --black-color: #000;
+  --white-color: #fff;
+  --destaque-text: #22D4FD;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--black-color);
-    color: var(--white-color);
-    display: flex;
-    flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 #seta {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid rgb(255, 255, 255);
-    margin: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff;
+  margin: 20px;
 }
 
 header {
-    background: linear-gradient(to bottom, var(--black-color) 0%, #111 100%);
-    position: fixed;
-    width: 100%;
-    padding: 10px 0;
+  background: linear-gradient(to bottom, var(--black-color) 0%, #111 100%);
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
 }
-
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  margin: 0 15px;
+}
+header nav ul li a {
+  color: #143f01;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-header ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-header ul li {
-    margin: 0 15px;
-}
-
-header ul li a {
-    color: rgb(20, 63, 1);;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-
-.title-destaque{
-    color: var(--destaque-text);
+.title-destaque {
+  color: var(--destaque-text);
 }
 
 #live-stream {
-    margin-top: 5%;
-    padding: 60px 30px;
-    background-color: var(--black-color);
+  margin-top: 5%;
+  padding: 60px 30px;
+  background-color: var(--black-color);
 }
-
-.stream-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+#live-stream .stream-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
-
-.stream-grid iframe {
-    width: 100%;
-    height: 500px;
-    border-radius: 10px;
-    border: none;
+#live-stream .stream-grid iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  border: none;
 }
-
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(to bottom, var(--black-color) 0%, #111 100%);
-    color: var(--text-color);
-    text-align: center;
-    padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, var(--black-color) 0%, #111 100%);
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px 0;
 }
 
 @media (max-width: 1024px) {
-    .stream-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stream-grid iframe {
-        height: 400px;
-    }
+  .stream-grid {
+    grid-template-columns: 1fr;
+  }
+  .stream-grid iframe {
+    height: 400px;
+  }
 }
-
 @media (max-width: 768px) {
-    #live-stream {
-        padding: 60px 0px;
-    }
-    .stream-grid {
-        gap: 5px;
-    }
-    .section-title {
-        font-size: 20px;
-        gap: 0.7rem;
-    }
+  #live-stream {
+    padding: 60px 0;
+  }
+  .stream-grid {
+    gap: 5px;
+  }
+  .section-title {
+    font-size: 20px;
+    gap: 0.7rem;
+  }
+}
+@media (max-width: 576px) {
+  .stream-grid iframe {
+    height: 250px;
+  }
+  footer {
+    font-size: 0.7em;
+  }
 }
 
-@media (max-width: 576px) {
-    .stream-grid iframe {
-        height: 250px;
-    }
-    footer{
-        font-size: 0.7em;
-    }
-}
+/*# sourceMappingURL=mm.css.map */
