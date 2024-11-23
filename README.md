@@ -1,5 +1,5 @@
 # Energia Limpa 
-[![NPM](https://img.shields.io/npm/l/react)](https://https://github.com/Brunootavioliveira/EnergiaLimpa/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Brunootavioliveira/EnergiaLimpa/blob/main/LICENSE) 
 
 O projeto Energia Limpa tem como objetivo conscientizar as pessoas sobre a importância de adotar tecnologias sustentáveis e práticas que promovam a preservação do meio ambiente. Por meio de um design intuitivo e informativo, a plataforma destaca a relevância das energias renováveis e incentiva ações em prol de um futuro mais verde.
 
